@@ -16,6 +16,11 @@ For this exercise we had to recreate the classic child game Rock Paper Scissors 
 
 
 ## ✨ Must Have Features 
+- Have three buttons that the player can press to pick their weapon of choice (feel free to use emoji's for this)
+- Have a play button to have the computer pick one randomly
+- Announce the winner
+  * No alert box, add a message to your html
+  * Possible outcomes: draw (when both chose the same thing) or player won/lost
 - Show a play again button after a game ended
 - Nice graphics
 - Different end message styling depending on the outcome (hint: you might need to add or remove classes via JavaScript for this)
@@ -26,8 +31,8 @@ For this exercise we had to recreate the classic child game Rock Paper Scissors 
   * Can you use functions to make your code easier to read or reuse?
   
   
-  ## 👀 Result 
-  ### - [Rock Paper Scissors](https://maureenoldyck.github.io/rock-paper-scissors/ "Rock Paper Scissors")
+## 👀 Result 
+### - [Rock Paper Scissors](https://maureenoldyck.github.io/rock-paper-scissors/ "Rock Paper Scissors")
  
 
   
