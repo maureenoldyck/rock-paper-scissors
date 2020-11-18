@@ -94,3 +94,10 @@ a {
 .vsImages > img {
     padding: 0 30px;
 }
+
+#score {
+    color:#120078;
+    font-weight: 700;
+    font-size: 15px;
+text-align: center;
+}
