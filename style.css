@@ -32,6 +32,11 @@ h1 {
     min-height: 170px;
 }
 
+.buttons:focus{
+    background-color:#F87909;
+}
+
+
 img {
 width: 60px;
 }
@@ -60,7 +65,10 @@ width: 60px;
 
 .answerText {
     text-align: left;
+    color: #6989AA;
+    font-size: 25px;
 }
+
 
 .footer {
 text-align: center;
@@ -73,4 +81,16 @@ padding-top: 100px;
 a {
     text-decoration: none;
     color: white;
+}
+
+.vsImages {
+    text-align: center;
+    padding-top: 20px;
+    color: #F87909;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.vsImages > img {
+    padding: 0 30px;
 }
