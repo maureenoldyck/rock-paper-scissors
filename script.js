@@ -1,6 +1,6 @@
 (function () {
 
-
+// Define the user button choices
         let usersChoice;
 
         document.getElementById("rock").addEventListener("click", function () {
@@ -29,7 +29,7 @@
 
 
 
-
+// Function to get the random answer for computer
     function computer() {
         const choices = ["Scissors", "Rock", "Paper"];
         return choices[Math.floor(Math.random() * choices.length)];
@@ -41,6 +41,7 @@
 
         const computersChoice = computer();
 
+// Else if function for the Answer Box
         if (computersChoice == usersChoice) {
             document.getElementById("answerBox").innerHTML = "You chose: " + usersChoice + ". The computer chose: " + computersChoice + "<br/> Draw. Try again!";
             document.getElementById("answerBox").style.color = "#6989AA";
@@ -53,10 +54,10 @@
             document.getElementById("answerBox").innerHTML = "You chose: " + usersChoice + ". The computer chose: " + computersChoice + "<br/> Too bad, you lost! But you can try again!";
             document.getElementById("answerBox").style.color = "#A52C00";
         }
-
+// Change the button Play to Play Again
         document.getElementById("play").innerHTML = "Play Again!";
 
-
+// Else if function for the VS Computer Image
         if (computersChoice === "Rock") {
             return document.getElementById("computerImage").src = "images/stone.png";
         }
