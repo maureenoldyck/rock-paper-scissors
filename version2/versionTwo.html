@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors but cuter</title>
+</head>
+
+<body>
+    <div class="background">
+        <h1 class="headerPictures"> <img src="images/elephant.png" alt="Rock"> VS <img src="images/mouse.png"
+                alt="Mouse"> VS <img src="images/cat.png" alt="Cat"> </h1>
+
+        <p class="rounds"> ROUND <span id="round">0</span> </p>
+        <ul class="pointsSystem">
+            <li> WIN <br> <span id="userPoints">0</span></li>
+            <li> TIES <br> <span id="ties">0</span> </li>
+            <li>LOST <br> <span id="computerPoints">0</span> </li>
+        </ul>
+
+        <ul class="container-main">
+            <li class="container-left">
+                <img id="imageUser" class="imageUser" src="images/cat.png" alt="">
+                <p class="userText">YOU</p>
+                <div class="buttonBox">
+                    <button class="buttons" type="button" id="elephant"><img class="button-img"
+                            src="images/elephant.png" alt="Elephant"></button>
+                    <button class="buttons" type="button" id="mouse"><img class="button-img" src="images/mouse.png"
+                            alt="Mouse"></button>
+                    <button class="buttons" type="button" id="cat"><img class="button-img" src="images/cat.png"
+                            alt="Cat"></button>
+                </div>
+            </li>
+            <li class="container-middle">
+                <p class="answerText" id="answerBox"> It's basically rock paper scissors but cuter! Here are the rules:
+                    Elephants win over cats, cats win over mouse and mouse wins over elephants (we can't blame the
+                    elephants
+                    for being scared of this tiny creature). Good luck! </p>
+                    <button class="playButton" type="button" id="play">Play</button>
+                            </li>
+            <li class="container-right">
+                <img class="imageComputer" src="images/elephant.png" id="computerImage" alt="">
+                <p class="computerText">Computer</p>
+            </li>
+        </ul>
+
+
+
+        <div class="footer">
+            <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

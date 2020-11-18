@@ -1,0 +1,125 @@
+body {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.background {
+    background-color: #d9eaf1;
+    border-radius: 490px 350px 60px 40px;
+    background-image: url("images/tree.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 100px;
+}
+
+
+.headerPictures {
+    text-align: center;
+}
+
+.headerPictures>img {
+    width: 70px;
+    padding: 5px 30px;
+
+}
+
+.rounds {
+    text-align: center;
+}
+
+.pointsSystem {
+    list-style: none;
+    display: flex;
+text-align: center;
+justify-content: center;
+}
+
+.pointsSystem > li {
+margin: 0 150px;
+}
+
+.container-main {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px dashed gray;
+    width: 300px;
+    height: 300px;
+}
+
+.container-middle {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    font-size: larger;
+    justify-content: center;
+
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.5px dashed gray;
+    width: 300px;
+    height: 300px;
+}
+
+.computerText {
+    margin: 0 auto;
+}
+
+
+.button-img {
+    width: 50px;
+}
+
+.imageUser {
+    object-fit: scale-down;
+    height: 50%;
+    padding: 10px 0 15px;
+}
+
+.userText {
+    margin: 15px auto;
+}
+
+.imageComputer{
+    object-fit: scale-down;
+    height: 70%;
+    padding-bottom: 15px;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    width: 25%;
+}
+
+.playButton {
+    width: 25%;
+    margin: 0 auto;
+padding: 15px;
+font-family: 'Luckiest Guy', cursive;
+
+}
+
+.footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
