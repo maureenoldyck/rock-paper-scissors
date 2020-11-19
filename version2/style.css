@@ -4,7 +4,7 @@ body {
 
 .background {
     background-color: #d9eaf1;
-    border-radius: 490px 350px 60px 40px;
+    border-radius: 490px 350px 0 0;
     background-image: url("images/tree.png");
     background-repeat: repeat-x;
     background-position: bottom;
