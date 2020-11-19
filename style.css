@@ -90,6 +90,10 @@ button {
     border: transparent;
 }
 
+button:focus {
+    background-color: #9ad3bc;
+}
+
 .button-img {
     width: 50px;
 }
