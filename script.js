@@ -23,9 +23,11 @@
     });
 
 
-// Variables for the Score Board (outside the Answer function otherwise they reinitialized everytime you call the function)
+    // Variables for the Score Board (outside the Answer function otherwise they reinitialized everytime you call the function)
     let userScore = 0;
     let computerScore = 0;
+    let round = 0;
+    let ties = 0;
 
 
     document.getElementById("play").addEventListener("click", answer);
@@ -39,17 +41,18 @@
     }
 
 
-  
+
 
 
     function answer() {
 
         const computersChoice = computer();
-    
+
         // Else if function for the Answer Box
         if (computersChoice == usersChoice) {
             document.getElementById("answerBox").innerHTML = "You chose: " + usersChoice + ". The computer chose: " + computersChoice + "<br/> Draw. Try again!";
             document.getElementById("answerBox").style.color = "#6989AA";
+            ties++;
         } else if (computersChoice == "Rock" && usersChoice == "Paper" || computersChoice == "Paper" && usersChoice == "Scissors" || computersChoice == "Scissors" && usersChoice == "Rock") {
             document.getElementById("answerBox").innerHTML = "You chose: " + usersChoice + ". The computer chose: " + computersChoice + "<br/> You won! Congratulations!";
             document.getElementById("answerBox").style.color = "#6AB96D";
@@ -62,7 +65,11 @@
 
         // Change the button Play to Play Again
         document.getElementById("play").innerHTML = "Play Again!";
-        document.getElementById("score").innerHTML = "SCORE: <br> PLAYER [" + userScore + "] VS COMPUTER [" + computerScore + "]";
+        round++;
+        document.getElementById("round").innerHTML = round;
+        document.getElementById("userPoints").innerHTML = userScore;
+        document.getElementById("ties").innerHTML = ties;
+        document.getElementById("computerPoints").innerHTML = computerScore;
 
 
 

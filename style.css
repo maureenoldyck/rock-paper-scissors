@@ -1,105 +1,139 @@
-
 body {
-    background-color: #F2927E;
-    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f1f6f9;
+
 }
 
 h1 {
-    text-align: center;
-    color:#6989AA;
-    font-size: 40px;
-margin: 0 auto;
+    font-size: 55px;
+    margin: 0;
+    color: #9ad3bc;
 }
 
-.container {
-    margin: 0 auto;
-    width: 50%;
+.pointsSystem {
+    margin-bottom: 50px;
+}
+
+.background {
+    background-image: url("images/tree.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 100px;
+}
+
+
+.headerPictures {
     text-align: center;
+}
+
+.headerPictures>img {
+    width: 70px;
+    padding: 5px 30px;
+
+}
+
+.rounds {
+    text-align: center;
+}
+
+.pointsSystem {
+    list-style: none;
+    display: flex;
+text-align: center;
+justify-content: center;
+}
+
+.pointsSystem > li {
+margin: 0 150px;
+}
+
+.container-main {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
+.container-middle {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    font-size: larger;
+    justify-content: center;
+
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+.computerText {
+    margin: 0 auto;
+}
+
+
+button {
+    background-color: transparent;
+    border: transparent;
+}
+
+.button-img {
+    width: 50px;
+}
+
+.imageUser {
+    object-fit: scale-down;
+    height: 50%;
+    padding: 10px 0 15px;
+}
+
+.userText {
+    margin: 15px auto;
+}
+
+.imageComputer{
+    object-fit: scale-down;
+    height: 70%;
+    padding-bottom: 15px;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: center;
 }
 
 .buttons {
-    background-color:#A52C00; 
-    color: white;
-    padding: 5px 32px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 1px 12px;
-    cursor: pointer;
-    min-width: 70px;
-    min-height: 90px;
-}
-
-.buttons:focus{
-    background-color:#F87909;
-}
-
-
-img {
-width: 60px;
+    width: 25%;
 }
 
 .playButton {
-    background-color:#6989AA; 
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 54px 12px 0;
-    cursor: pointer;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
+    width: 25%;
+    margin: 55px auto;
+padding: 15px;
+font-family: 'Nunito', sans-serif;
+border: 1px solid #9ad3bc;
+border-radius: 5px;
 }
-
-.answer {
-    margin: 50px auto;
-    width: 50%;
-    text-align: center;
-}
-
-
-.answerText {
-    text-align: left;
-    color: #6989AA;
-    font-size: 25px;
-}
-
 
 .footer {
-text-align: center;
-font-size: 5px;
-color:white;
-text-decoration: none;
-padding-top: 100px;
+    text-align: center;
+    font-size: 10px;
 }
 
 a {
     text-decoration: none;
-    color: white;
-}
-
-.vsImages {
-    text-align: center;
-    padding: 10px 0;
-    color: #F87909;
-    font-weight: 900;
-    font-size: 60px;
-}
-
-.vsImages > img {
-    padding: 0 30px;
-    width: 100px;
-
-}
-
-#score {
-    color:#120078;
-    font-weight: 700;
-    font-size: 15px;
-text-align: center;
+    color: black;
 }
