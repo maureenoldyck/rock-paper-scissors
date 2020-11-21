@@ -1,3 +1,5 @@
+/* Whole page elements styling */ 
+
 body {
     font-family: 'Montserrat', sans-serif;
         background-color: #d9eaf1;
@@ -22,6 +24,20 @@ body {
 
 }
 
+.footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Point system styling */ 
+
+
 .rounds {
     text-align: center;
 }
@@ -37,6 +53,10 @@ justify-content: center;
 margin: 0 150px;
 }
 
+
+
+/* Main styling game */ 
+
 .container-main {
     list-style: none;
     display: flex;
@@ -44,13 +64,6 @@ margin: 0 150px;
     margin-bottom: 120px;
 }
 
-.container-left {
-    display: flex;
-    flex-direction: column;
-    border: 0.5px dashed gray;
-    width: 300px;
-    height: 300px;
-}
 
 .container-middle {
     display: flex;
@@ -62,6 +75,30 @@ margin: 0 150px;
     justify-content: center;
 
 }
+
+/* Specific user part styling */ 
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px dashed gray;
+    width: 300px;
+    height: 300px;
+}
+
+.imageUser {
+    object-fit: scale-down;
+    height: 50%;
+    padding: 10px 0 15px;
+}
+
+.userText {
+    margin: 15px auto;
+}
+.button-img {
+    width: 50px;
+}
+/* Specific computer part styling */ 
 
 .container-right {
     display: flex;
@@ -77,25 +114,15 @@ margin: 0 150px;
 }
 
 
-.button-img {
-    width: 50px;
-}
-
-.imageUser {
-    object-fit: scale-down;
-    height: 50%;
-    padding: 10px 0 15px;
-}
-
-.userText {
-    margin: 15px auto;
-}
 
 .imageComputer{
     object-fit: scale-down;
     height: 70%;
     padding-bottom: 15px;
 }
+
+/* Buttons styling */ 
+
 
 .buttonBox {
     display: flex;
@@ -114,12 +141,55 @@ font-family: 'Montserrat', sans-serif;
 
 }
 
-.footer {
-    text-align: center;
-    font-size: 10px;
-}
+/* Media Queries */
 
-a {
-    text-decoration: none;
-    color: black;
-}
+@media (max-width: 575.98px) {
+
+    
+        .imageUser {
+       
+         height: 25%;
+        }
+    
+        .imageComputer {
+            height: 25%;
+        }
+    
+    
+        .buttons {
+            padding-left: 5px;
+    
+        }
+    
+
+
+        .container-main {
+            flex-direction: column;
+        }
+    
+    
+    }
+    
+    
+    @media (max-width: 767.98px) {
+    
+    
+        .imageUser {
+            height: 40%;
+        }
+    
+        .imageComputer {
+            height: 40%;
+        }
+    
+        .playButton {
+            font-size: 10px;
+        }
+    
+        .pointsSystem>li {
+            margin: 0 50px;
+        }
+    
+    
+    
+    }
