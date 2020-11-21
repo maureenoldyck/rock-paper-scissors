@@ -1,35 +1,36 @@
+/* General style elements */ 
+
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #f1f6f9;
 
 }
 
+/* Text style Elements */ 
+
 h1 {
     font-size: 55px;
     margin: 0;
     color: #9ad3bc;
-}
-
-.pointsSystem {
-    margin-bottom: 50px;
-}
-
-.background {
-    background-image: url("images/tree.png");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: 100px;
-}
-
-
-.headerPictures {
     text-align: center;
 }
 
-.headerPictures>img {
-    width: 70px;
-    padding: 5px 30px;
+.footer {
+    text-align: center;
+    font-size: 10px;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Points system style elements */ 
+
+.pointsSystem {
+    margin-bottom: 50px;
 }
 
 .rounds {
@@ -47,18 +48,16 @@ justify-content: center;
 margin: 0 150px;
 }
 
+
+
+/* Style elements game */
+
+
 .container-main {
     list-style: none;
     display: flex;
     justify-content: center;
     margin-bottom: 120px;
-}
-
-.container-left {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 300px;
 }
 
 .container-middle {
@@ -71,6 +70,28 @@ margin: 0 150px;
     justify-content: center;
 
 }
+
+/* More detailed style parts user part*/ 
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
+.imageUser {
+    object-fit: scale-down;
+    height: 70%;
+    padding: 10px 0 15px;
+}
+
+.userText {
+    margin: 15px auto;
+}
+
+
+/* More detailed style parts computer part */
 
 .container-right {
     display: flex;
@@ -85,6 +106,15 @@ margin: 0 150px;
 }
 
 
+.imageComputer{
+    object-fit: scale-down;
+    height: 70%;
+    padding-bottom: 15px;
+}
+
+
+/* Buttons styling */
+
 button {
     background-color: transparent;
     border: transparent;
@@ -96,22 +126,6 @@ button:focus {
 
 .button-img {
     width: 50px;
-}
-
-.imageUser {
-    object-fit: scale-down;
-    height: 50%;
-    padding: 10px 0 15px;
-}
-
-.userText {
-    margin: 15px auto;
-}
-
-.imageComputer{
-    object-fit: scale-down;
-    height: 70%;
-    padding-bottom: 15px;
 }
 
 .buttonBox {
@@ -132,12 +146,20 @@ border: 1px solid #9ad3bc;
 border-radius: 5px;
 }
 
-.footer {
-    text-align: center;
-    font-size: 10px;
-}
 
-a {
-    text-decoration: none;
-    color: black;
-}
+/* Media Queries */ 
+
+@media (max-width: 575.98px) { 
+
+ }
+
+
+@media (max-width: 767.98px) { 
+
+ }
+
+
+@media (max-width: 991.98px) { 
+
+ }
+
