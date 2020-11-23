@@ -88,4 +88,13 @@
     };
 
 
+// function to refresh the page, to start a new game
+function restart() {
+    window.location.reload();
+}
+
+document.getElementById("refresh").addEventListener("click", restart);
+
+
+
 })();

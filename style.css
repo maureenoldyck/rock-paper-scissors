@@ -132,16 +132,35 @@ button:focus {
 
 .buttons {
     width: 25%;
+    cursor: pointer;
 }
 
 .playButton {
-    width: 25%;
+    width: 70px;
     margin: 55px auto;
     padding: 15px;
     font-family: 'Nunito', sans-serif;
     border: 1px solid #9ad3bc;
     border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
 }
+
+.refreshButton {
+    width: 70px;
+    margin: 55px auto;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #9ad3bc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.middle-buttons {
+    display: flex;
+    margin: 0 auto;
+}
+
 
 
 /* Media Queries */
