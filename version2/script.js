@@ -55,6 +55,9 @@
             document.getElementById("answerBox").innerHTML = "You chose: " + usersChoice + ". The computer chose: " + computersChoice + "<br/> You scared away the " + computersChoice + "! Congratulations!";
             document.getElementById("answerBox").style.color = "#6AB96D";
             userScore++;
+        } else if (usersChoice == undefined) {
+            document.getElementById("answerBox").innerHTML = "Please choose a cute buddy before you play!";
+            document.getElementById("answerBox").style.color = "#6989AA";
         } else {
             document.getElementById("answerBox").innerHTML = "You chose: " + usersChoice + ". The computer chose: " + computersChoice + "<br/> Oh no you got in the way of a " + computersChoice + "! But you can try again!";
             document.getElementById("answerBox").style.color = "#A52C00";

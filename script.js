@@ -57,6 +57,9 @@
             document.getElementById("answerBox").innerHTML = "You chose: " + usersChoice + ". The computer chose: " + computersChoice + "<br/> You won! Congratulations!";
             document.getElementById("answerBox").style.color = "#6AB96D";
             userScore++;
+        } else if (usersChoice == undefined) {
+            document.getElementById("answerBox").innerHTML = "Please choose a weapon before you play!";
+            document.getElementById("answerBox").style.color = "#6989AA";
         } else {
             document.getElementById("answerBox").innerHTML = "You chose: " + usersChoice + ". The computer chose: " + computersChoice + "<br/> Too bad, you lost! But you can try again!";
             document.getElementById("answerBox").style.color = "#A52C00";
