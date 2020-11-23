@@ -64,12 +64,12 @@
         //Change the button Play to Play Again
         document.getElementById("play").innerHTML = "Play Again!";
         round++;
-         document.getElementById("round").innerHTML = round;
-         document.getElementById("userPoints").innerHTML = userScore;
-         document.getElementById("ties").innerHTML = ties;
-         document.getElementById("computerPoints").innerHTML = computerScore;
+        document.getElementById("round").innerHTML = round;
+        document.getElementById("userPoints").innerHTML = userScore;
+        document.getElementById("ties").innerHTML = ties;
+        document.getElementById("computerPoints").innerHTML = computerScore;
 
-    
+
 
 
         // Else if function for the VS Computer Image
@@ -81,6 +81,17 @@
             return document.getElementById("computerImage").src = "images/mouse.png";
         };
 
+
     };
+
+
+    // function to refresh the page, to start a new game
+    function restart() {
+        window.location.reload();
+    }
+
+    document.getElementById("refresh").addEventListener("click", restart);
+
+
 
 })();
